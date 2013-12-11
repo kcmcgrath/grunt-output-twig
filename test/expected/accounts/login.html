@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+			<meta charset="utf-8" />
+		<title>Login - On the Rocks</title>
+		<meta name="viewport" content="width=1000" />
+		<link rel="home" href="" />
+		<link rel="stylesheet" type="text/css" href="/resources/css/ontherocks.css" />
+	</head>
+
+<body>
+	<header id="header">
+		<h1><a href="">On the Rocks</a></h1>
+
+		<nav>
+			<ul>
+				<li><a  href="cocktails">Cocktails</a></li>
+				<li><a  href="ingredients">Ingredients</a></li>
+				<li><a  href="blog">Blog</a></li>
+			</ul>
+		</nav>
+
+		<ul id="account">
+							<li><a id="loginLink" href="">Login</a></li>
+				<li><a href="accounts/register">Register</a></li>
+					</ul>
+	</header>
+
+	<div id="main">
+		
+		<header>
+			<h1>Login</h1>
+		</header>
+
+		<div id="content">
+										<form class="form" method="post" action="" accept-charset="UTF-8">
+		<input type="hidden" name="action" value="users/login">
+		<input type="hidden" name="redirect" value="">
+
+		<h3 class="first"><label for="loginName">Username or email</label></h3>
+		<input id="loginName" class="text fulltext" type="text" name="loginName" value="">
+
+		<h3><label for="password">Password</label></h3>
+		<input id="password" class="text fulltext" type="password" name="password">
+
+		<label class="checkbox">
+            <input type="checkbox" name="rememberMe" value="1">
+            Remember me
+        </label>
+
+		<div class="buttons">
+			<input class="submit" type="submit" value="Login">
+		</div>
+	</form>
+
+	<p><a href="accounts/forgotpassword">Forget your password?</a></p>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="/resources/lib/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="/resources/lib/packery.pkgd.min.js"></script>
+	<script type="text/javascript" src="/resources/js/ontherocks.js"></script>
+</body>
+</html>

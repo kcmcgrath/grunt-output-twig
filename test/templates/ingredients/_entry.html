@@ -1,0 +1,28 @@
+{#
+ # This template is loaded whenever the URL matches a Ingredients section entry,
+ # because the Ingredients section's "Entry Template" setting is set to "ingredients/_entry".
+ #
+ # Craft will pre-populate an 'entry' variable with the matched Ingredients entry
+ # when loading this template.
+ #
+ # See: http://docs.buildwithcraft.com/reference/routing.html
+ #}
+
+{% extends "_layout" %}
+{% set title = entry.title %}
+
+{% block content %}
+	<div class="packery-container">
+		{% include "_includes/photos" with { photos: entry.photos } only %}
+
+		<div class="pane">
+			<h2>Used in</h2>
+
+			<ul class="bullets">
+				{% for cocktail in entry.parents('ingredients').section('cocktails').find() %}
+					<li><a href="{{ cocktail.url }}">{{ cocktail }}</a></li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+{% endblock %}

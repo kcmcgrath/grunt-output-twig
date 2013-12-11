@@ -1,0 +1,16 @@
+{#
+ # This is the homepage template!
+ #}
+
+{% extends "_layout" %}
+{% set title = entry.heading %}
+
+{% block test %}
+woo
+{% endblock %}
+
+{% block content %}
+	<div class="intro">
+		{{ entry.siteIntro }}
+	</div>
+{% endblock %}

@@ -1,0 +1,7 @@
+{% extends "_layout" %}
+{% set title = "Ingredients" %}
+
+{% block content %}
+	{% set ingredients = craft.entries.section('ingredients').order('title').find() %}
+	{% include "_includes/a-z" with { entries: ingredients } %}
+{% endblock %}
