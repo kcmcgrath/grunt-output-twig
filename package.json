@@ -1,7 +1,7 @@
 {
   "name": "grunt-output-twig",
   "description": "A Grunt plugin to compile npm twig templates. Allows for seamless workflow between frontend prototyping and CRAFT CMS (or similiar) templating",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "homepage": "https://github.com/kcmcgrath/grunt-output-twig",
   "author": {
     "name": "Kevin McGrath",
@@ -40,6 +40,6 @@
     "gruntplugin"
   ],
   "dependencies": {
-    "twig": "~0.5.13"
+    "twig": "~0.7.0"
   }
 }

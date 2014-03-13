@@ -2,6 +2,9 @@
 
 > A Grunt version of npm twig. Allows for twig template to be compiled through grunt. The CRAFT CMS (http://buildwithcraft.com) was used for sample templates (and the whole reason I tried to do this in the first place). Not all TWIG capabilities are present, per the npm twig project. Notes on limitations are available here: https://github.com/justjohn/twig.js/wiki/Implementation-Notes
 
+## Changelog
+0.1.2 -- Updated twig to 0.7.0
+
 ## Getting Started
 This plugin requires Grunt `~0.4.1`
 
