@@ -23,8 +23,11 @@ module.exports = function(grunt) {
 		var options = this.options({
 			docroot: false,
 			tmpext: '.html',
-			context: { message : "Hello World" }
-		});	
+			context: { message : "Hello World" },
+			cache: true
+		});
+		
+		Twig.cache(options.cache);
 
 		/**
 		 * TWIG Alterations
