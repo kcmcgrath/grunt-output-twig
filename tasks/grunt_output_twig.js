@@ -46,7 +46,8 @@ module.exports = function(grunt) {
 				var output,
 					contents = grunt.file.read(src);
 				var template = new Twig.twig({
-					data: contents
+					data: contents,
+					rethrow: true
 				});
 
 				var basepath = path.resolve(path.dirname(src), path.resolve(options.docroot));
